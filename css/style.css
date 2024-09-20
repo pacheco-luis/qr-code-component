@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  background-color: hsl(212, 45%, 89%);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.qr-card {
+  display: grid;
+  row-gap: 2.4rem;
+  width: 32rem;
+  padding: 1.6rem 1.6rem 4rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  box-shadow: 0 2.5rem 2.5rem hsla(0, 0%, 0%, 0.0477);
+}
+.qr-card__image-box {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.qr-card__text {
+  display: grid;
+  row-gap: 1.6rem;
+  text-align: center;
+  padding-inline: 1.6rem;
+}
+.qr-card__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.182;
+  color: hsl(218, 44%, 22%);
+}
+.qr-card__description {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.02rem;
+  color: hsl(216, 26%, 55%);
+  text-wrap: pretty;
+}
+
+/*# sourceMappingURL=style.css.map */

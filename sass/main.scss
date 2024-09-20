@@ -1,0 +1,103 @@
+// Colors
+// --------------------------------------------------
+$color-white: hsl(0, 0%, 100%);
+$color-slate-300: hsl(212, 45%, 89%);
+$color-slate-500: hsl(216, 26%, 55%);
+$color-slate-900: hsl(218, 44%, 22%);
+
+// Shadows
+// --------------------------------------------------
+$drop-shadow: 0 2.5rem 2.5rem hsl(0, 0%, 0%, 4.77%);
+
+// Font
+// --------------------------------------------------
+// Font sizes
+$font-size-base: 1.5rem;
+$font-size-lg: 2.2rem;
+
+// Font weights
+$font-weight-medium: 400;
+$font-weight-bold: 700;
+
+// Line height
+$line-height-base: 1.182;
+$line-height-lg: 1.4;
+
+// Letter Spacing
+$letter-spacing-normal: 0.02rem;
+
+// Reset
+// --------------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: $font-weight-medium;
+  background-color: $color-slate-300;
+}
+
+// Structure
+// --------------------------------------------------
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.qr-card {
+  display: grid;
+  row-gap: 2.4rem;
+  width: 32rem;
+  padding: 1.6rem 1.6rem 4rem;
+  background-color: $color-white;
+  border-radius: 2rem;
+  box-shadow: $drop-shadow;
+
+  &__image-box {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  &__text {
+    display: grid;
+    row-gap: 1.6rem;
+    text-align: center;
+    padding-inline: 1.6rem;
+  }
+
+  &__title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-base;
+    color: $color-slate-900;
+  }
+
+  &__description {
+    font-size: $font-size-base;
+    line-height: $line-height-lg;
+    letter-spacing: $letter-spacing-normal;
+    color: $color-slate-500;
+    text-wrap: pretty;
+  }
+}
